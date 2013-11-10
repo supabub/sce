@@ -13,10 +13,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A19FF6E5182826C500B096D1"
-               BuildableName = "utils_unittest"
-               BlueprintName = "utils_unittest"
-               ReferencedContainer = "container:utils_unittest.xcodeproj">
+               BlueprintIdentifier = "A162AC991830275500D93F4D"
+               BuildableName = "code_unittests"
+               BlueprintName = "code_unittests"
+               ReferencedContainer = "container:code_unittests.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,10 +31,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A19FF6E5182826C500B096D1"
-            BuildableName = "utils_unittest"
-            BlueprintName = "utils_unittest"
-            ReferencedContainer = "container:utils_unittest.xcodeproj">
+            BlueprintIdentifier = "A162AC991830275500D93F4D"
+            BuildableName = "code_unittests"
+            BlueprintName = "code_unittests"
+            ReferencedContainer = "container:code_unittests.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -42,17 +42,18 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
       launchStyle = "0"
-      useCustomWorkingDirectory = "NO"
+      useCustomWorkingDirectory = "YES"
+      customWorkingDirectory = "/Users/christianschmutzer/sce/data"
       buildConfiguration = "Debug"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A19FF6E5182826C500B096D1"
-            BuildableName = "utils_unittest"
-            BlueprintName = "utils_unittest"
-            ReferencedContainer = "container:utils_unittest.xcodeproj">
+            BlueprintIdentifier = "A162AC991830275500D93F4D"
+            BuildableName = "code_unittests"
+            BlueprintName = "code_unittests"
+            ReferencedContainer = "container:code_unittests.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -67,10 +68,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A19FF6E5182826C500B096D1"
-            BuildableName = "utils_unittest"
-            BlueprintName = "utils_unittest"
-            ReferencedContainer = "container:utils_unittest.xcodeproj">
+            BlueprintIdentifier = "A162AC991830275500D93F4D"
+            BuildableName = "code_unittests"
+            BlueprintName = "code_unittests"
+            ReferencedContainer = "container:code_unittests.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

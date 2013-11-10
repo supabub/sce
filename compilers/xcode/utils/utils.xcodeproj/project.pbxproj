@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A133EACB15B86BE700C010BA /* start.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A133EAC915B86BE700C010BA /* start.cpp */; };
+		A162ACAA183029CD00D93F4D /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = A162ACA9183029CD00D93F4D /* debug.h */; };
+		A162ACAD18302B8400D93F4D /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A162ACAC18302B8400D93F4D /* debug.cpp */; };
 		A19FF70E18282DC900B096D1 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = A19FF70D18282DC900B096D1 /* utils.h */; };
 		A19FF71118282E4F00B096D1 /* timer.h in Headers */ = {isa = PBXBuildFile; fileRef = A19FF71018282E4F00B096D1 /* timer.h */; };
 		A19FF717182830DA00B096D1 /* timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A19FF716182830DA00B096D1 /* timer.cpp */; };
@@ -17,6 +19,8 @@
 		A133EABD15B86BAA00C010BA /* utils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = utils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A133EAC615B86BE700C010BA /* start.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = start.h; sourceTree = "<group>"; };
 		A133EAC915B86BE700C010BA /* start.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = start.cpp; sourceTree = "<group>"; };
+		A162ACA9183029CD00D93F4D /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		A162ACAC18302B8400D93F4D /* debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = debug.cpp; sourceTree = "<group>"; };
 		A19FF70D18282DC900B096D1 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 		A19FF71018282E4F00B096D1 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
 		A19FF716182830DA00B096D1 /* timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timer.cpp; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 		A133EAC515B86BE700C010BA /* headers */ = {
 			isa = PBXGroup;
 			children = (
+				A162ACA9183029CD00D93F4D /* debug.h */,
 				A133EAC615B86BE700C010BA /* start.h */,
 				A19FF71018282E4F00B096D1 /* timer.h */,
 			);
@@ -80,6 +85,7 @@
 		A133EAC815B86BE700C010BA /* source */ = {
 			isa = PBXGroup;
 			children = (
+				A162ACAC18302B8400D93F4D /* debug.cpp */,
 				A133EAC915B86BE700C010BA /* start.cpp */,
 				A19FF716182830DA00B096D1 /* timer.cpp */,
 			);
@@ -95,6 +101,7 @@
 			files = (
 				A19FF70E18282DC900B096D1 /* utils.h in Headers */,
 				A19FF71118282E4F00B096D1 /* timer.h in Headers */,
+				A162ACAA183029CD00D93F4D /* debug.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +157,7 @@
 			files = (
 				A133EACB15B86BE700C010BA /* start.cpp in Sources */,
 				A19FF717182830DA00B096D1 /* timer.cpp in Sources */,
+				A162ACAD18302B8400D93F4D /* debug.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 
 
 #include "headers/timer.h"
+#include "headers/debug.h"
 
 
 namespace sce

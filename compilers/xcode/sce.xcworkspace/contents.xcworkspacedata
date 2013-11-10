@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:utils_unittest/utils_unittest.xcodeproj">
+      location = "group:../../code_unittests/code_unittests.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:utils/utils.xcodeproj">

@@ -9,17 +9,6 @@
 #include <iostream>
 #include "../../code/utils/utils.h"
 
-namespace schas 
-{
-    
-#define OASCH(test)         {   \
-                                if( test == true ) \
-                                    std::cout << "is true" << std::endl; \
-                                else \
-                                    std::cout << "is false" << std::endl; \
-                            } \
-
-}
 
 int main (int argc, const char * argv[])
 {
@@ -36,7 +25,7 @@ int main (int argc, const char * argv[])
     
     {
         SCE_TRACE("FIRST TIME CALLING TRACE\n")
-        SCE_ASSERT_2(false, "First time calling assertion 2")
+        // SCE_ASSERT_2(false, "First time calling assertion 2")
     }
     
     return 0;

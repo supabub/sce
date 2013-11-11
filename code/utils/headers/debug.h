@@ -153,7 +153,7 @@ namespace sce
     
     
     
-    template<typename T> void
+    template<typename T> inline void
     Generic_Debug<T>::trace(const char* info)
     {
         //sprintf_s(str, length, "%s", info);
@@ -167,7 +167,7 @@ namespace sce
         }
     }
     
-    template<typename T> void
+    template<typename T> inline void
     Generic_Debug<T>::log(const char* info,
                           const char* logFile,
                           const char* file, 
@@ -187,7 +187,7 @@ namespace sce
         }
     }
     
-    template<typename T> void
+    template<typename T> inline void
     Generic_Debug<T>::assertDb(bool test, const char* info)
     {
         if( test ) return;
@@ -198,7 +198,7 @@ namespace sce
         }
     }
     
-    template<typename T> void
+    template<typename T> inline void
     Generic_Debug<T>::registerListener(DebugListener* dbgListener)
     {
         listeners_.push_back(dbgListener);

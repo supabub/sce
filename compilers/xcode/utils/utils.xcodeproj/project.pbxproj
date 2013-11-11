@@ -13,6 +13,13 @@
 		A19FF70E18282DC900B096D1 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = A19FF70D18282DC900B096D1 /* utils.h */; };
 		A19FF71118282E4F00B096D1 /* timer.h in Headers */ = {isa = PBXBuildFile; fileRef = A19FF71018282E4F00B096D1 /* timer.h */; };
 		A19FF717182830DA00B096D1 /* timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A19FF716182830DA00B096D1 /* timer.cpp */; };
+		A1A592B91831735700EC7BD5 /* database.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A592B81831735700EC7BD5 /* database.h */; };
+		A1A592BC183173A000EC7BD5 /* database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1A592BB183173A000EC7BD5 /* database.cpp */; };
+		A1A592BF183173FA00EC7BD5 /* file_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A592BD183173FA00EC7BD5 /* file_stream.h */; };
+		A1A592C0183173FA00EC7BD5 /* stringHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A592BE183173FA00EC7BD5 /* stringHelpers.h */; };
+		A1A592C31831740A00EC7BD5 /* file_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1A592C11831740A00EC7BD5 /* file_stream.cpp */; };
+		A1A592C41831740A00EC7BD5 /* stringHelpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1A592C21831740A00EC7BD5 /* stringHelpers.cpp */; };
+		A1A592C81831746500EC7BD5 /* basic_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A592C71831746500EC7BD5 /* basic_stream.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		A19FF70D18282DC900B096D1 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 		A19FF71018282E4F00B096D1 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
 		A19FF716182830DA00B096D1 /* timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timer.cpp; sourceTree = "<group>"; };
+		A1A592B81831735700EC7BD5 /* database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = database.h; sourceTree = "<group>"; };
+		A1A592BB183173A000EC7BD5 /* database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = database.cpp; sourceTree = "<group>"; };
+		A1A592BD183173FA00EC7BD5 /* file_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file_stream.h; sourceTree = "<group>"; };
+		A1A592BE183173FA00EC7BD5 /* stringHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringHelpers.h; sourceTree = "<group>"; };
+		A1A592C11831740A00EC7BD5 /* file_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = file_stream.cpp; sourceTree = "<group>"; };
+		A1A592C21831740A00EC7BD5 /* stringHelpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stringHelpers.cpp; sourceTree = "<group>"; };
+		A1A592C71831746500EC7BD5 /* basic_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_stream.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,10 @@
 		A133EAC515B86BE700C010BA /* headers */ = {
 			isa = PBXGroup;
 			children = (
+				A1A592C71831746500EC7BD5 /* basic_stream.h */,
+				A1A592BD183173FA00EC7BD5 /* file_stream.h */,
+				A1A592BE183173FA00EC7BD5 /* stringHelpers.h */,
+				A1A592B81831735700EC7BD5 /* database.h */,
 				A162ACA9183029CD00D93F4D /* debug.h */,
 				A133EAC615B86BE700C010BA /* start.h */,
 				A19FF71018282E4F00B096D1 /* timer.h */,
@@ -85,6 +103,9 @@
 		A133EAC815B86BE700C010BA /* source */ = {
 			isa = PBXGroup;
 			children = (
+				A1A592C11831740A00EC7BD5 /* file_stream.cpp */,
+				A1A592C21831740A00EC7BD5 /* stringHelpers.cpp */,
+				A1A592BB183173A000EC7BD5 /* database.cpp */,
 				A162ACAC18302B8400D93F4D /* debug.cpp */,
 				A133EAC915B86BE700C010BA /* start.cpp */,
 				A19FF716182830DA00B096D1 /* timer.cpp */,
@@ -102,6 +123,10 @@
 				A19FF70E18282DC900B096D1 /* utils.h in Headers */,
 				A19FF71118282E4F00B096D1 /* timer.h in Headers */,
 				A162ACAA183029CD00D93F4D /* debug.h in Headers */,
+				A1A592B91831735700EC7BD5 /* database.h in Headers */,
+				A1A592BF183173FA00EC7BD5 /* file_stream.h in Headers */,
+				A1A592C0183173FA00EC7BD5 /* stringHelpers.h in Headers */,
+				A1A592C81831746500EC7BD5 /* basic_stream.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +183,9 @@
 				A133EACB15B86BE700C010BA /* start.cpp in Sources */,
 				A19FF717182830DA00B096D1 /* timer.cpp in Sources */,
 				A162ACAD18302B8400D93F4D /* debug.cpp in Sources */,
+				A1A592BC183173A000EC7BD5 /* database.cpp in Sources */,
+				A1A592C31831740A00EC7BD5 /* file_stream.cpp in Sources */,
+				A1A592C41831740A00EC7BD5 /* stringHelpers.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

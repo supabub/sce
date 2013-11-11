@@ -25,6 +25,11 @@
 #include <iostream>
 #include <fstream>
 
+#ifdef __APPLE__
+    #include <sys/types.h>
+    #include <sys/stat.h>
+#endif
+
 
 #ifdef _WIN32            // handle WIN32 dbg release macros
 

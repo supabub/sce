@@ -15,100 +15,43 @@ namespace sce
 	 *	Passing a directory:
 	 *		"/data/entity/standards"
 	 */
-	struct DataBase
-	{
-		~DataBase() {}
 
-		static DataBase&	getInstance();
-
-		void				start();
-
-		/**
-		 *	Get the working directory (all executables must be placed there).
-		 *	Example:	
-		 *		std::string execDir = DataBase::getInstance().getExecDirectory();
-		 */
+    namespace DataBase
+    {
+        
 		const std::string&	getExecDirectory();
 
+        // helper for the win32 system
 		std::string			convertBackSlashToSlash(const std::string& path);
 
-		/**
-		 *	
-		 */
-		void				createDirectory(const std::string& dir);			// relative to exec dir! syntax ex: "\newDir"
+        // creation of deleting and deleting things
+		bool				createDirectory(const std::string& dir);                // relative to exec dir! syntax ex: "\newDir"
+		bool				deleteDirectory(const std::string& dir);                // relative to exec dir! syntax ex: "\newDir"
 
-		/**
-		 *	
-		 */
-		void				deleteDirectory(const std::string& dir);
-
-		/**
-		 *	
-		 */
-		void				deleteFile(const std::string& fileName);
-
-		/**
-		 *	
-		 */
+		bool				deleteFile(const std::string& path);
 		void				renameFile(const std::string& fileName, const std::string& newFileName);
 
-		/**
-		 *	
-		 */
-		std::string			getRelativePath(const std::string& fullPath);		// get path relative to exec directory
+        // some simplifications handling paths and files
+		std::string			getRelativePath(const std::string& absolutePath);		// get path rel. to exec directory
+		std::string			getPath(const std::string& path);                       // get path out of rel./abs path
+        std::string			getFile(const std::string& path);                       // get file out of rel./abs path
 
-		/**
-		 *	
-		 */
-		std::string			getPathFromFile(const std::string& filePath);		// get path where file is placed
+        // check existence
+		bool				doesExist(const std::string& path);                     // check if file/dir exist
 
-		/**
-		 *	
-		 */
-		void				getDirectoryStructure(const std::string& filePath, std::vector<std::string>& dirs);
-
-		/**
-		 *	
-		 */
-		std::string			getFileFromPath(const std::string& fileAndPath);
-
-		/**
-		 *	
-		 */
-		bool				doesFileExist(const std::string& path);
-
-		/**
-		 *	
-		 */
-		bool				doesDirExist(const std::string& path);
-
-		/**
-		 *	
-		 */
+        // grab contens
 		void				getAllDirectories(const std::string& startDir, std::vector<std::string>& dirs);
-
-		/**
-		 *	
-		 */
 		bool				getAllFilesInDirectory(const std::string& startDir, 
 													std::vector<std::string>& files,
 													const std::string& extension = ".*",
 													bool recursive = false);
-
-		/**
-		 *	
-		 */
 		bool				findFileInDirectory(const std::string& startDir,
 												const std::string& file,
 												std::string& relativePath,
 												bool recursive = false);
+        
+    }
 
-	private:
-		DataBase() {}
-
-		std::string					execDirectory_;
-		std::vector<std::string>	allDirs_;
-	};
 
 } // namespace sce
 

@@ -30,6 +30,24 @@ namespace sce
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //**************************************************************************
+    
+    
     template<typename T> inline void 
     tokenizeString(const std::string& str, const std::string& delims, T& tokens)
     {

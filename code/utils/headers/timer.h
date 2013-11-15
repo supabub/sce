@@ -14,7 +14,9 @@
 
 namespace sce 
 {
-    
+ 
+    // timer works with nanosces
+    // to work with millisces, use macros below
     template<typename T>
     struct Generic_Timer
     {

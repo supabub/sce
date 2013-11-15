@@ -33,7 +33,7 @@ namespace sce
 
 		fileName_ = file;
 		std::string fileName;
-		fileName = DataBase::getInstance().getExecDirectory() + file;
+		fileName = DataBase::getExecDirectory() + file;
 
 		//fopen_s(&file_, fileName.c_str(), modi.c_str());
         file_ = fopen(fileName.c_str(), modi.c_str());

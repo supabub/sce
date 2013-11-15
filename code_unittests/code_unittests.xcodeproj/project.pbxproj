@@ -10,6 +10,9 @@
 		A162AC9F1830275500D93F4D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A162AC9E1830275500D93F4D /* main.cpp */; };
 		A162ACA11830275500D93F4D /* code_unittests.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A162ACA01830275500D93F4D /* code_unittests.1 */; };
 		A162ACA81830277A00D93F4D /* utils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A162ACA71830277A00D93F4D /* utils.a */; };
+		A195DB081834165C001D5487 /* utils_unittests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A195DB071834165C001D5487 /* utils_unittests.cpp */; };
+		A195DB0A18341FE6001D5487 /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A195DB0918341FE6001D5487 /* libboost_filesystem.dylib */; };
+		A195DB0C18341FF0001D5487 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A195DB0B18341FF0001D5487 /* libboost_system.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +33,10 @@
 		A162AC9E1830275500D93F4D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A162ACA01830275500D93F4D /* code_unittests.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = code_unittests.1; sourceTree = "<group>"; };
 		A162ACA71830277A00D93F4D /* utils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = utils.a; path = ../compilers/xcode/DerivedData/sce/Build/Products/Debug/utils.a; sourceTree = "<group>"; };
+		A195DB06183415F5001D5487 /* utils_unittests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils_unittests.h; sourceTree = "<group>"; };
+		A195DB071834165C001D5487 /* utils_unittests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils_unittests.cpp; sourceTree = "<group>"; };
+		A195DB0918341FE6001D5487 /* libboost_filesystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_filesystem.dylib; path = usr/local/lib/libboost_filesystem.dylib; sourceTree = SDKROOT; };
+		A195DB0B18341FF0001D5487 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = usr/local/lib/libboost_system.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A195DB0C18341FF0001D5487 /* libboost_system.dylib in Frameworks */,
+				A195DB0A18341FE6001D5487 /* libboost_filesystem.dylib in Frameworks */,
 				A162ACA81830277A00D93F4D /* utils.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +56,8 @@
 		A162AC8F1830275500D93F4D = {
 			isa = PBXGroup;
 			children = (
+				A195DB0B18341FF0001D5487 /* libboost_system.dylib */,
+				A195DB0918341FE6001D5487 /* libboost_filesystem.dylib */,
 				A162ACA71830277A00D93F4D /* utils.a */,
 				A162AC9D1830275500D93F4D /* code_unittests */,
 				A162AC9B1830275500D93F4D /* Products */,
@@ -66,6 +77,8 @@
 			children = (
 				A162AC9E1830275500D93F4D /* main.cpp */,
 				A162ACA01830275500D93F4D /* code_unittests.1 */,
+				A195DB06183415F5001D5487 /* utils_unittests.h */,
+				A195DB071834165C001D5487 /* utils_unittests.cpp */,
 			);
 			path = code_unittests;
 			sourceTree = "<group>";
@@ -121,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A162AC9F1830275500D93F4D /* main.cpp in Sources */,
+				A195DB081834165C001D5487 /* utils_unittests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +227,7 @@
 				A162ACA61830275500D93F4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

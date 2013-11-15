@@ -9,10 +9,9 @@
 #ifndef utils_utils_h
 #define utils_utils_h
 
-
-#include "headers/timer.h"
 #include "headers/debug.h"
-
+#include "headers/timer.h"
+#include "headers/database.h"
 
 namespace sce
 {
